@@ -1,0 +1,21 @@
+CREATE TABLE `sys_user_online` (
+  `id` VARCHAR(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `host` VARCHAR(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `browser` VARCHAR(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `os` VARCHAR(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `dept_name` VARCHAR(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `login_name` VARCHAR(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `start_timestamp` DATETIME DEFAULT NULL,
+  `last_assess_time` DATETIME DEFAULT NULL,
+  `expire_time` DATETIME DEFAULT NULL,
+  `session_id` VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `create_name` VARCHAR(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `create_time` DATETIME DEFAULT NULL,
+  `del_flag` INT DEFAULT NULL,
+  `update_name` VARCHAR(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `update_time` DATETIME DEFAULT NULL,
+  `ipaddr` VARCHAR(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `last_access_time` DATETIME DEFAULT NULL,
+  `login_location` VARCHAR(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `status` INT DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
